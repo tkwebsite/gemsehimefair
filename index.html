@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	 <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MDGRGT4');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//code.jquery.com' />
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link href="./images/favicon.ico" rel="icon" type="image/x-icon">
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":".\/js\/wp-emoji-release.min.js?ver=6.4.1"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.21/b-1.6.2/r-2.2.5/datatables.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/select/1.3.1/css/select.dataTables.min.css" />
+<script src="https://code.jquery.com/jquery-3.5.1.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.21/b-1.6.2/r-2.2.5/datatables.min.js"></script>
+<script type="text/javascript" src="https://gyrocode.github.io/jquery-datatables-pageLoadMore/1.0.0/js/dataTables.pageLoadMore.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/select/1.3.1/js/dataTables.select.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='./css/style.min.css' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='reset-style-css' href='./css/destyle.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='main-style-css' href='./css/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='google-fonts-css' href='https://fonts.googleapis.com/css2?family=Gothic+A1&#038;family=Outfit&#038;display=swap' type='text/css' media='all' />
+<link rel='stylesheet' id='slick-style-css' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css?ver=6.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='slick-theme-style-css' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css?ver=6.4.1' type='text/css' media='all' />
+<link rel="https://api.w.org/" href="./css/wp.json" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="./css/xmlrpc.xml" />
+<link rel="stylesheet" type="text/css" href="./css/table.css" />
+<meta name="generator" content="WordPress 6.4.1" />
+
+<!-- Google tag (gtag.js) --> 
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10811388617"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-10811388617'); </script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23326233-22"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23326233-22');
+</script>
+
+</head>
+
+<body class="home blog">
+    <header>
+        
+    </header>
+
+<main>
+    <!-- ファーストビュー -->
+    <div class="fv">
+        <div class="container">
+            <div class="top-slider">
+                <div class="slider-img">
+                    <picture>
+                        <source media="(max-width: 800px)" srcset="./images/fv01.jpg">
+                        <img src="./images/fv01.jpg"
+                            width="1440" height="720" alt="メインビュー" decoding="async">
+                    </picture>
+                </div>
+
+                <div class="slider-img">
+                    <picture>
+                        <source media="(max-width: 800px)" srcset="./images/fv02.jpg">
+                        <img src="./images/fv02.jpg"
+                            width="1440" height="720" alt="メインビュー" decoding="async">
+                    </picture>
+                </div>
+
+                <div class="slider-img">
+                    <picture>
+                        <source media="(max-width: 800px)" srcset="./images/fv03.jpg">
+                        <img src="./images/fv03.jpg"
+                            width="1440" height="720" alt="メインビュー" decoding="async">
+                    </picture>
+                </div>
+
+                <div class="slider-img">
+                    <picture>
+                        <source media="(max-width: 800px)" srcset="./images/fv04.jpg">
+                        <img src="./images/fv04.jpg"
+                            width="1440" height="720" alt="メインビュー" decoding="async">
+                    </picture>
+                </div>
+
+                <div class="slider-img">
+                    <picture>
+                        <source media="(max-width: 800px)" srcset="./images/fv05.jpg">
+                        <img src="./images/fv05.jpg"
+                            width="1440" height="720" alt="メインビュー" decoding="async">
+                    </picture>
+                </div>
+            </div>
+            <div class="fv-area">
+            <!-- <h1>
+            GEMS × KOUCHI<br>
+                    FOOD FAIR
+            </h1> -->
+	            <img src="./images/kochi_fair_logo.png" alt="GEMS × KOUCHI FOOD FAIR">
+	            <div class="fv-display">
+	                <p><span class="extra-bold">愛媛フェア開催</span><br><span class="bold">◯/◯◯</span> TUE ▶︎ <span class="bold">◯/◯◯</span> MON<br>
+	            会場 各GEMS</p>
+	            </div>
+
+        	</div>
+        </div>
+
+    </div>
+
+    <!-- フードフェア -->
+    <div class="food-fair">
+        <div class="container">
+            <div class="food-white">
+                <!-- <img class="topic" src="./images/topic.svg"
+                    width="552" height="210" alt="トピック" decoding="async">
+                <picture>
+                    <source srcset="./images/spdate.svg" media="(max-width: 800px)"/>
+                    <img src="./images/pcdate.svg" alt="日付"/>
+                </picture> -->
+                <p class="food-subtitle">GEMSで食べて、飲んで、<br>愛媛を元気に。</p>
+
+            </div>
+            <div class="food-grid">
+                <img src="./images/meal01.jpg"
+                    width="400" height="400" alt="食材" decoding="async">
+
+                <img src="./images/meal02.jpg"
+                    width="400" height="400" alt="食材" decoding="async">
+
+                <img src="./images/meal03.jpg"
+                    width="400" height="400" alt="食材" decoding="async">
+
+                <img src="./images/meal04.jpg"
+                    width="400" height="400" alt="食材" decoding="async">
+
+                    <div class="food-bottom">
+                    <p>
+グルメタワーGEMSが愛媛県と協力し、<br class="pc_view">
+愛媛の魅力溢れる食材を使用した特別メニューをご提供！<br>
+フェア期間中はGEMSの飲食店◯◯店舗以上で様々な愛媛食材が楽しめます。<br>
+店舗ごとに違うメニューをご用意しておりますので、色々な店舗を巡ってみては...
+</p>
+                </div>
+            </div>
+            <p class="food-bottom-text">旬な愛媛食材がGEMSで食べられる！</p>
+        </div>
+    </div>
+
+<div class="shop">
+    <div class="container">
+        <h2>フェア参加店舗紹介</h2>
+
+        <div class="search-area">
+        <!--
+        <form id="searchForm" action="./" method="GET">
+        <div class="search-down">
+        <select name="dropdown">
+            <option value="nakameguro" selected>GEMS中目黒</option>
+            <option value="tamachi">GEMS田町</option>
+            <option value="shinbashi">GEMS新橋</option>
+            <option value="sangenzyaya">GEMS三軒茶屋</option>
+            <option value="zingumae">GEMS神宮前</option>
+            <option value="kayabacho">GEMS茅場町</option>
+            <option value="ebisu">GEMS恵比寿</option>
+            <option value="shinnihonbashi">GEMS新日本橋</option>
+            <option value="daimon">GEMS大門</option>
+            <option value="ichigaya">GEMS市ヶ谷</option>
+            <option value="shibuya">GEMS渋谷</option>
+            <option value="yokohama">GEMS横浜</option>
+            <option value="shinyokohama">GEMS新横浜</option>
+            <option value="kawasaki">GEMS川崎</option>
+            <option value="nanba">GEMSなんば</option>
+            <option value="sakae">GEMS栄</option>
+        </select>
+		</div>
+	</form>
+	-->
+
+	<div class="search-result" id="searchResult">
+        <table class='table table-stripe' id="searchTable">
+            <thead>
+                <tr>
+                    <th>エリア</th>
+                </tr>
+            </thead>
+        </table>
+        <table class='table table-stripe' id="restaurantCasset">
+            <thead>
+                <tr>
+                    <th>order</th>
+                    <th>building</th>
+                    <th>floor</th>
+                    <th>restaurant_id</th>
+                    <th>restaurant_name</th>
+                    <th>category</th>
+                    <th>campaign</th>
+                    <th>image</th>
+                    <th>redirect_url</th>
+                    <th>copy</th>
+                    <th></th>
+                </tr>
+            </thead>
+        </table>
+        <div class="load_more">
+            <button id="btn-example-load-more" style="display:none">もっとみる</button>
+        </div>
+        <!-- dataTables bootstrap4を使うためのJSファイル -->
+        <!-- 独自定義JS -->
+        <script type="text/javascript">
+        // const request = new XMLHttpRequest();
+        // const requestCloseRestaurant = new XMLHttpRequest();
+
+        var restaurantData = "";
+        var restaurantDataForTable = [];
+
+        // Get Json
+        // request.open("GET", "data/restaurant.json");
+        // request.addEventListener("load", (event) => {
+        //     if (event.target.status !== 200) {
+        //         console.log(`${event.target.status}: ${event.target.statusText}`);
+        //         return;
+        //     }
+
+        var jsonText = '[{"order":"1","building":"GEMS中目黒","floor":"7F","restaurant_id":"100001723787","restaurant_name":"和牛焼肉一心","category":"焼肉","campaign":"TRUE","image":"./uploads/2024/01/shop01.webp","redirect_url":"https://retty.me/area/PRE13/ARE7/SUB703/100001723787/","copy":""},{"order":"1","building":"GEMS中目黒","floor":"6F","restaurant_id":"100001711572","restaurant_name":"四川酒家 田々 DENDEN","category":"中華料理","campaign":"FALSE","image":"./uploads/2024/01/005.webp","redirect_url":"https://retty.me/area/PRE13/ARE7/SUB703/100001711572/","copy":""},{"order":"1","building":"GEMS中目黒","floor":"5F","restaurant_id":"100001685631","restaurant_name":"シーシャラウンジ チルラグ中目黒店","category":"バー","campaign":"TRUE","image":"./uploads/2024/01/100001685631.jpeg","redirect_url":"https://retty.me/area/PRE13/ARE7/SUB703/100001685631/","copy":""},{"order":"1","building":"GEMS中目黒","floor":"4F","restaurant_id":"100001701226","restaurant_name":"DartsCafe UNO 中目黒","category":"バー","campaign":"TRUE","image":"./uploads/2024/01/nakameguroUNO002.jpeg","redirect_url":"https://retty.me/area/PRE13/ARE7/SUB703/100001701226/","copy":""},{"order":"1","building":"GEMS中目黒","floor":"3F","restaurant_id":"100001574874","restaurant_name":"エル・チャテオ　中目黒店","category":"居酒屋","campaign":"TRUE","image":"./uploads/2024/01/w.jpeg","redirect_url":"https://retty.me/area/PRE13/ARE7/SUB703/100001574874/","copy":"創業15年 韓国政府の 「優秀韓食レストラン」認定店"},{"order":"1","building":"GEMS中目黒","floor":"2F","restaurant_id":"100001587712","restaurant_name":"寿司活　GEMS中目黒店","category":"寿司","campaign":"FALSE","image":"./uploads/2024/01/88908.jpeg","redirect_url":"https://retty.me/area/PRE13/ARE7/SUB703/100001587712/","copy":"品質にこだわった職人が握る本格寿司を 是非ご堪能ください"},{"order":"1","building":"GEMS中目黒","floor":"1F","restaurant_id":"100001571855","restaurant_name":"ユッケ・生サムギョプサル・コプチャン ハヌリ中目黒店","category":"韓国料理","campaign":"TRUE","image":"./uploads/2024/01/100001571855.jpeg","redirect_url":"https://retty.me/area/PRE13/ARE7/SUB703/100001571855/","copy":"創業15年 韓国政府の 「優秀韓食レストラン」認定店"},{"order":"1","building":"GEMS田町","floor":"9F","restaurant_id":"100001466452","restaurant_name":"焼肉ぽんが田町店","category":"焼肉","campaign":"TRUE","image":"./uploads/2024/01/shop02.jpg","redirect_url":"https://retty.me/area/PRE13/ARE16/SUB1602/100001466452/","copy":""},{"order":"1","building":"GEMS田町","floor":"6F","restaurant_id":"100001594500","restaurant_name":"KOREAN IZAKAYAジャン GEMS田町","category":"居酒屋","campaign":"TRUE","image":"./uploads/2024/01/397539.jpeg","redirect_url":"https://retty.me/area/PRE13/ARE16/SUB1602/100001594500/","copy":""},{"order":"1","building":"GEMS田町","floor":"5F","restaurant_id":"100001466452","restaurant_name":"焼肉ぽんが田町店(完全個室)","category":"焼肉","campaign":"TRUE","image":"./uploads/2024/01/100001466452.jpeg","redirect_url":"https://retty.me/area/PRE13/ARE16/SUB1602/100001466452/","copy":""},{"order":"1","building":"GEMS田町","floor":"4F","restaurant_id":"100001466461","restaurant_name":"田町 そばまえ　by moto","category":"そば（蕎麦）","campaign":"TRUE","image":"./uploads/2024/01/001.jpg","redirect_url":"https://retty.me/area/PRE13/ARE16/SUB1602/100001466461/","copy":""},{"order":"1","building":"GEMS田町","floor":"2F","restaurant_id":"100001581956","restaurant_name":"DELI STATION X","category":"弁当屋","campaign":"TRUE","image":"./uploads/2024/01/001-1.jpg","redirect_url":"https://retty.me/area/PRE13/ARE16/SUB1602/100001581956/","copy":""},{"order":"1","building":"GEMS田町","floor":"1F","restaurant_id":"100001698512","restaurant_name":"MODERN MEXICAN CABOS","category":"メキシコ料理","campaign":"TRUE","image":"./uploads/2024/01/001-2.jpg","redirect_url":"https://retty.me/area/PRE13/ARE16/SUB1602/100001698512/","copy":""},{"order":"1","building":"GEMS田町","floor":"B1F","restaurant_id":"100001472496","restaurant_name":"沖縄いちゃりば酒場 あかゆら","category":"沖縄料理","campaign":"TRUE","image":"./uploads/2024/01/100001472496.png","redirect_url":"https://retty.me/area/PRE13/ARE16/SUB1602/100001472496/","copy":""},{"order":"1","building":"GEMS新橋","floor":"9F","restaurant_id":"100001436050","restaurant_name":"ニクアザブ新橋店","category":"焼肉","campaign":"TRUE","image":"./uploads/2024/01/100001436050.jpeg","redirect_url":"https://retty.me/area/PRE13/ARE2/SUB1601/100001436050/","copy":""},{"order":"1","building":"GEMS新橋","floor":"8F","restaurant_id":"100001436054","restaurant_name":"お好み焼き・鉄板焼きパチパチ新橋店","category":"お好み焼き","campaign":"TRUE","image":"./uploads/2024/01/001-3.jpg","redirect_url":"https://retty.me/area/PRE13/ARE2/SUB1601/100001436054/","copy":""},{"order":"1","building":"GEMS新橋","floor":"7F","restaurant_id":"100001436059","restaurant_name":"ヨプの王豚塩焼 GEMS新橋店","category":"焼肉","campaign":"FALSE","image":"./uploads/2024/01/001-4.jpg","redirect_url":"https://retty.me/area/PRE13/ARE2/SUB1601/100001436059/","copy":""},{"order":"1","building":"GEMS新橋","floor":"6F","restaurant_id":"100001710480","restaurant_name":"Cafe Bar & ShishaPONTE luce","category":"バー","campaign":"TRUE","image":"./uploads/2024/01/100001710480.jpeg","redirect_url":"https://retty.me/area/PRE13/ARE2/SUB1601/100001710480/","copy":""},{"order":"1","building":"GEMS新橋","floor":"5F","restaurant_id":"100001605490","restaurant_name":"マルヤス酒場新橋店","category":"居酒屋","campaign":"FALSE","image":"./uploads/2024/01/100001605490.jpeg","redirect_url":"https://retty.me/area/PRE13/ARE2/SUB1601/100001605490/","copy":""},{"order":"1","building":"GEMS新橋","floor":"4F","restaurant_id":"100001436072","restaurant_name":"山形蕎麦と炙りの焰藏新橋店","category":"居酒屋","campaign":"FALSE","image":"./uploads/2024/01/001-7.jpg","redirect_url":"https://retty.me/area/PRE13/ARE2/SUB1601/100001436072/","copy":""},{"order":"1","building":"GEMS新橋","floor":"3F","restaurant_id":"100001440692","restaurant_name":"ニイハオ新橋店","category":"餃子","campaign":"FALSE","image":"./uploads/2024/01/001-8.jpg","redirect_url":"https://retty.me/area/PRE13/ARE2/SUB1601/100001440692/","copy":""},{"order":"1","building":"GEMS新橋","floor":"2F","restaurant_id":"100001436077","restaurant_name":"土佐清水ワールド新橋店","category":"居酒屋","campaign":"TRUE","image":"./uploads/2024/01/001-9.jpg","redirect_url":"https://retty.me/area/PRE13/ARE2/SUB1601/100001436077/","copy":""},{"order":"1","building":"GEMS新橋","floor":"1F","restaurant_id":"100001436081","restaurant_name":"白金肉 Grill_BBQ PLATINUM MEAT","category":"肉バル","campaign":"FALSE","image":"./uploads/2024/01/100001436081.jpeg","redirect_url":"https://retty.me/area/PRE13/ARE2/SUB1601/100001436081/","copy":""},{"order":"1","building":"GEMS三軒茶屋","floor":"8F","restaurant_id":"100001431218","restaurant_name":"産直の魚貝と日本酒・焼酎和バル 三茶まれ","category":"魚介・海鮮料理","campaign":"TRUE","image":"./uploads/2024/01/001-11.jpg","redirect_url":"https://retty.me/area/PRE13/ARE20/SUB2003/100001431218/","copy":""},{"order":"1","building":"GEMS三軒茶屋","floor":"7F","restaurant_id":"100001421055","restaurant_name":"香辣里 (シャンラーリー)","category":"中華料理","campaign":"FALSE","image":"./uploads/2024/01/001-12-scaled.jpg","redirect_url":"https://retty.me/area/PRE13/ARE20/SUB2003/100001421055/","copy":""},{"order":"1","building":"GEMS三軒茶屋","floor":"6F","restaurant_id":"100001423685","restaurant_name":"さつま福永牧場直営 牛串ギュウドウ！","category":"ステーキ","campaign":"TRUE","image":"./uploads/2024/01/002.jpg","redirect_url":"https://retty.me/area/PRE13/ARE20/SUB2003/100001423685/","copy":""},{"order":"1","building":"GEMS三軒茶屋","floor":"5F","restaurant_id":"100001699238","restaurant_name":"月島もんじゃ もへじ 三軒茶屋","category":"もんじゃ焼き","campaign":"TRUE","image":"./uploads/2024/01/001-13.jpg","redirect_url":"https://retty.me/area/PRE13/ARE20/SUB2003/100001699238/","copy":""},{"order":"1","building":"GEMS三軒茶屋","floor":"4F","restaurant_id":"100001425866","restaurant_name":"韓国料理 KollaBo 三軒茶屋店","category":"韓国料理","campaign":"FALSE","image":"./uploads/2024/01/100001425866.jpeg","redirect_url":"https://retty.me/area/PRE13/ARE20/SUB2003/100001425866/","copy":""},{"order":"1","building":"GEMS三軒茶屋","floor":"3F","restaurant_id":"100001421564","restaurant_name":"富士屋本店グリルバー","category":"フランス料理","campaign":"FALSE","image":"./uploads/2024/01/001-15-scaled.jpg","redirect_url":"https://retty.me/area/PRE13/ARE20/SUB2003/100001421564/","copy":""},{"order":"1","building":"GEMS三軒茶屋","floor":"2F","restaurant_id":"100001511099","restaurant_name":"リザラン三軒茶屋店","category":"スペインバル","campaign":"TRUE","image":"./uploads/2024/01/001-16.jpg","redirect_url":"https://retty.me/area/PRE13/ARE20/SUB2003/100001511099/","copy":""},{"order":"1","building":"GEMS三軒茶屋","floor":"1F","restaurant_id":"100001420245","restaurant_name":"TEN FINGERS BURGER","category":"ハンバーガー","campaign":"TRUE","image":"./uploads/2024/01/001-17-scaled.jpg","redirect_url":"https://retty.me/area/PRE13/ARE20/SUB2003/100001420245/","copy":""},{"order":"1","building":"GEMS三軒茶屋","floor":"B1F","restaurant_id":"100001582662","restaurant_name":"寿司とワイン　サンチャモニカ","category":"寿司","campaign":"TRUE","image":"./uploads/2024/01/100001582662.jpeg","redirect_url":"https://retty.me/area/PRE13/ARE20/SUB2003/100001582662/","copy":""},{"order":"1","building":"GEMS神宮前","floor":"10F","restaurant_id":"100001443170","restaurant_name":"BUTCHER’S CAMP YAKINIKU ZENIBA","category":"焼肉","campaign":"FALSE","image":"./uploads/2024/01/100001443170.jpeg","redirect_url":"https://retty.me/area/PRE13/ARE23/SUB2301/100001443170/","copy":""},{"order":"1","building":"GEMS神宮前","floor":"5F","restaurant_id":"100001415988","restaurant_name":"エリックサウスマサラダイナー","category":"インド料理","campaign":"TRUE","image":"./uploads/2024/01/100001415988.jpeg","redirect_url":"https://retty.me/area/PRE13/ARE23/SUB2301/100001415988/","copy":""},{"order":"1","building":"GEMS神宮前","floor":"4F","restaurant_id":"100001516082","restaurant_name":"カステリーナ神宮前","category":"イタリア料理","campaign":"TRUE","image":"./uploads/2024/01/100001516082.jpeg","redirect_url":"https://retty.me/area/PRE13/ARE23/SUB2301/100001516082/","copy":""},{"order":"1","building":"GEMS茅場町","floor":"10F","restaurant_id":"100001419377","restaurant_name":"焼肉KIM ふらっと","category":"焼肉","campaign":"FALSE","image":"./uploads/2024/01/001-21.jpg","redirect_url":"https://retty.me/area/PRE13/ARE10/SUB1002/100001419377/","copy":""},{"order":"1","building":"GEMS茅場町","floor":"9F","restaurant_id":"100001401801","restaurant_name":"CASTELLINA茅場町","category":"パスタ","campaign":"TRUE","image":"./uploads/2024/01/100001401801.png","redirect_url":"https://retty.me/area/PRE13/ARE10/SUB1002/100001401801/","copy":""},{"order":"1","building":"GEMS茅場町","floor":"7F","restaurant_id":"100001573510","restaurant_name":"とろさば料理専門店SABAR茅場町店","category":"居酒屋","campaign":"TRUE","image":"./uploads/2024/01/001-22.jpg","redirect_url":"https://retty.me/area/PRE13/ARE10/SUB1002/100001573510/","copy":""},{"order":"1","building":"GEMS茅場町","floor":"6F","restaurant_id":"100001424743","restaurant_name":"バル　ジミー","category":"ワインバー","campaign":"TRUE","image":"./uploads/2024/01/001-23.jpg","redirect_url":"https://retty.me/area/PRE13/ARE10/SUB1002/100001424743/","copy":""},{"order":"1","building":"GEMS茅場町","floor":"5F","restaurant_id":"100001410676","restaurant_name":"炭火焼鳥専門店播鳥　茅場町店","category":"焼き鳥","campaign":"FALSE","image":"./uploads/2024/01/100001410676.jpeg","redirect_url":"https://retty.me/area/PRE13/ARE10/SUB1002/100001410676/","copy":""},{"order":"1","building":"GEMS茅場町","floor":"4F","restaurant_id":"100001421223","restaurant_name":"藁焼き鰹たたき 明神丸GEMS茅場町店","category":"居酒屋","campaign":"TRUE","image":"./uploads/2024/01/100001421223.jpeg","redirect_url":"https://retty.me/area/PRE13/ARE10/SUB1002/100001421223/","copy":""},{"order":"1","building":"GEMS茅場町","floor":"3F","restaurant_id":"100001710477","restaurant_name":"個室居酒屋さつま武蔵 茅場町店","category":"居酒屋","campaign":"FALSE","image":"./uploads/2024/01/100001710477.jpeg","redirect_url":"https://retty.me/area/PRE13/ARE10/SUB1002/100001710477/","copy":""},{"order":"1","building":"GEMS茅場町","floor":"2F","restaurant_id":"100001537334","restaurant_name":"うーみや茅場町駅前店","category":"沖縄料理","campaign":"TRUE","image":"./uploads/2024/01/100001537334.jpeg","redirect_url":"https://retty.me/area/PRE13/ARE10/SUB1002/100001537334/","copy":""},{"order":"1","building":"GEMS茅場町","floor":"1F","restaurant_id":"100001602166","restaurant_name":"PARKER HOUSE　BUTTER ROLL","category":"パン屋","campaign":"TRUE","image":"./uploads/2024/01/100001602166.jpeg","redirect_url":"https://retty.me/area/PRE13/ARE10/SUB1002/100001602166/","copy":""},{"order":"1","building":"GEMS恵比寿","floor":"8F","restaurant_id":"100001360490","restaurant_name":"YORONIKU 蕃 ebisu","category":"焼肉","campaign":"TRUE","image":"./uploads/2024/01/shop06.jpg","redirect_url":"https://retty.me/area/PRE13/ARE7/SUB701/100001360490/","copy":"名物シルクロースやシャトーブリアンは必食の美味しさ！焼肉好きのための至福の空間"},{"order":"1","building":"GEMS恵比寿","floor":"7F","restaurant_id":"100001441458","restaurant_name":"くずし鉄板 あばぐら 恵比寿店","category":"鉄板焼き","campaign":"TRUE","image":"./uploads/2024/01/001-30.jpg","redirect_url":"https://retty.me/area/PRE13/ARE7/SUB701/100001441458/","copy":""},{"order":"1","building":"GEMS恵比寿","floor":"6F","restaurant_id":"100001361244","restaurant_name":"Nouvelle　Ethnique　Atha","category":"タイ料理","campaign":"TRUE","image":"./uploads/2024/01/001-31.jpg","redirect_url":"https://retty.me/area/PRE13/ARE7/SUB701/100001361244/","copy":""},{"order":"1","building":"GEMS恵比寿","floor":"5F","restaurant_id":"100001361275","restaurant_name":"Taberna de Espana FRAGANTE HUMO","category":"スペインバル","campaign":"TRUE","image":"./uploads/2024/01/001-32.jpg","redirect_url":"https://retty.me/area/PRE13/ARE7/SUB701/100001361275/","copy":""},{"order":"1","building":"GEMS恵比寿","floor":"4F","restaurant_id":"100001361116","restaurant_name":"もんじろう","category":"焼き鳥","campaign":"TRUE","image":"./uploads/2024/01/001-33.jpg","redirect_url":"https://retty.me/area/PRE13/ARE7/SUB701/100001361116/","copy":""},{"order":"1","building":"GEMS恵比寿","floor":"3F","restaurant_id":"100001360814","restaurant_name":"カルネジーオイースト","category":"肉バル","campaign":"TRUE","image":"./uploads/2024/01/001-34.jpg","redirect_url":"https://retty.me/area/PRE13/ARE7/SUB701/100001360814/","copy":"上品な雰囲気で心地良く、黒毛和牛コースが自慢の恵比寿にある大人のための肉バル"},{"order":"1","building":"GEMS恵比寿","floor":"2F","restaurant_id":"100001360543","restaurant_name":"トラットリアヴィヴァーチェ恵比寿","category":"イタリア料理","campaign":"TRUE","image":"./uploads/2024/01/001-35.jpg","redirect_url":"https://retty.me/area/PRE13/ARE7/SUB701/100001360543/","copy":""},{"order":"1","building":"GEMS恵比寿","floor":"1F","restaurant_id":"100001446255","restaurant_name":"BUTCHER REPUBLIC EBISU CHICAGO PIZZA & BEER","category":"居酒屋","campaign":"TRUE","image":"./uploads/2024/01/100001446255.jpeg","redirect_url":"https://retty.me/area/PRE13/ARE7/SUB701/100001446255/","copy":""},{"order":"1","building":"GEMS恵比寿","floor":"B1F","restaurant_id":"100001361302","restaurant_name":"本家あべや","category":"ビストロ","campaign":"TRUE","image":"./uploads/2024/01/001-37.jpg","redirect_url":"https://retty.me/area/PRE13/ARE7/SUB701/100001361302/","copy":""},{"order":"1","building":"GEMS新日本橋","floor":"8F","restaurant_id":"100001288721","restaurant_name":"肉の匠将泰庵　新日本橋店","category":"焼肉","campaign":"FALSE","image":"./uploads/2024/01/shop07.jpg","redirect_url":"https://retty.me/area/PRE13/ARE11/SUB1101/100001288721/","copy":"肉汁が溢れる、飲めるハンバーグ御膳が絶品な肉料理のお店"},{"order":"1","building":"GEMS新日本橋","floor":"6F","restaurant_id":"100001717998","restaurant_name":"野乃鳥 日本橋","category":"焼き鳥","campaign":"TRUE","image":"./uploads/2024/01/001-39.jpg","redirect_url":"https://retty.me/area/PRE13/ARE11/SUB1101/100001717998/","copy":""},{"order":"1","building":"GEMS新日本橋","floor":"5F","restaurant_id":"100001280440","restaurant_name":"くずし鉄板あばぐらGEMS神田店","category":"ステーキ","campaign":"TRUE","image":"./uploads/2024/01/001-40-scaled.jpg","redirect_url":"https://retty.me/area/PRE13/ARE11/SUB1101/100001280440/","copy":"千代田区にある神田駅からすぐの鉄板焼きのお店"},{"order":"1","building":"GEMS新日本橋","floor":"4F","restaurant_id":"100001690680","restaurant_name":"鮨しいな","category":"寿司","campaign":"TRUE","image":"./uploads/2024/01/001-41-scaled.jpg","redirect_url":"https://retty.me/area/PRE13/ARE6/SUB603/100001690680/","copy":""},{"order":"1","building":"GEMS新日本橋","floor":"2F","restaurant_id":"100001727472","restaurant_name":"大衆韓国酒場チュルギダ","category":"韓国料理","campaign":"FALSE","image":"./uploads/2024/01/100001727472.jpeg","redirect_url":"https://retty.me/area/PRE13/ARE11/SUB1101/100001727472/","copy":""},{"order":"1","building":"GEMS新日本橋","floor":"B1F","restaurant_id":"100001727474","restaurant_name":"すすきの大助 東京店","category":"郷土料理","campaign":"FALSE","image":"./uploads/2024/01/001.webp","redirect_url":"https://retty.me/area/PRE13/ARE11/SUB1101/100001727474/","copy":""},{"order":"1","building":"GEMS大門","floor":"9F","restaurant_id":"100001709926","restaurant_name":"TENDAN+","category":"焼肉","campaign":"TRUE","image":"./uploads/2024/01/001-1.webp","redirect_url":"https://retty.me/area/PRE13/ARE16/SUB1602/100001709926/","copy":""},{"order":"1","building":"GEMS大門","floor":"8F","restaurant_id":"100001722960","restaurant_name":"一心金子 はなれ門前","category":"天ぷら","campaign":"TRUE","image":"./uploads/2024/01/001-2.webp","redirect_url":"https://retty.me/area/PRE13/ARE16/SUB1602/100001722960/","copy":""},{"order":"1","building":"GEMS大門","floor":"7F","restaurant_id":"100001267310","restaurant_name":"燻製Dining OJIJI","category":"ダイニングバー","campaign":"TRUE","image":"./uploads/2024/01/001-42-scaled.jpg","redirect_url":"https://retty.me/area/PRE13/ARE16/SUB1602/100001267310/","copy":"あれもこれも燻製にしちゃうダイニングバー。燻製肉はお酒が進んで危険かも"},{"order":"1","building":"GEMS大門","floor":"6F","restaurant_id":"100001699312","restaurant_name":"炭火と酒 くろや 浜松町店","category":"居酒屋","campaign":"TRUE","image":"./uploads/2024/01/001-43.jpg","redirect_url":"https://retty.me/area/PRE13/ARE16/SUB1602/100001699312/","copy":""},{"order":"1","building":"GEMS大門","floor":"5F","restaurant_id":"100001267804","restaurant_name":"とろさば料理専門店SABAR 東京GEMS大門店","category":"居酒屋","campaign":"TRUE","image":"./uploads/2024/01/001-44.jpg","redirect_url":"https://retty.me/area/PRE13/ARE16/SUB1602/100001267804/","copy":"鯖に対するこだわりが随所に感じられる、鯖料理の専門店"},{"order":"1","building":"GEMS大門","floor":"4F","restaurant_id":"100001708461","restaurant_name":"アーンドラ・ダイニング","category":"インド料理","campaign":"TRUE","image":"./uploads/2024/01/001-45.jpg","redirect_url":"https://retty.me/area/PRE13/ARE16/SUB1602/100001708461/","copy":""},{"order":"1","building":"GEMS大門","floor":"3F","restaurant_id":"100001640692","restaurant_name":"ジョンデー　大門店","category":"韓国料理","campaign":"TRUE","image":"./uploads/2024/01/001-46.jpg","redirect_url":"https://retty.me/area/PRE13/ARE16/SUB1602/100001640692/","copy":""},{"order":"1","building":"GEMS大門","floor":"1","restaurant_id":"100001261422","restaurant_name":"Trattoria Cicci Fantastico","category":"イタリア料理","campaign":"TRUE","image":"./uploads/2024/01/001-47.jpg","redirect_url":"https://retty.me/area/PRE13/ARE16/SUB1602/100001261422/","copy":"本格イタリアンをライブ感満載のオープンキッチンで楽しめるお店"},{"order":"1","building":"GEMS大門","floor":"B1F","restaurant_id":"100001253640","restaurant_name":"ビストロガブリ　大門店","category":"ビストロ","campaign":"TRUE","image":"./uploads/2024/01/001-48.jpg","redirect_url":"https://retty.me/area/PRE13/ARE16/SUB1602/100001253640/","copy":"ステーキはサラダバー、スープ付き、ごはんおかわり自由で1300円"},{"order":"1","building":"GEMS市ヶ谷","floor":"9F","restaurant_id":"100001176936","restaurant_name":"炭火焼肉　なかはら","category":"焼肉","campaign":"FALSE","image":"./uploads/2024/01/001-49.jpg","redirect_url":"https://retty.me/area/PRE13/ARE6/SUB602/100001176936/","copy":"肉厚タンに驚愕、最後まで飽きないコースが魅力の炭火焼肉店"},{"order":"1","building":"GEMS市ヶ谷","floor":"8F","restaurant_id":"100001204057","restaurant_name":"STEAK HOUSE De Salita","category":"肉バル","campaign":"FALSE","image":"./uploads/2024/01/001-50-scaled.jpg","redirect_url":"https://retty.me/area/PRE13/ARE6/SUB602/100001204057/","copy":"炭火で焼き上げたグリル料理が人気のお洒落なビストロ"},{"order":"1","building":"GEMS市ヶ谷","floor":"7F","restaurant_id":"100001727473","restaurant_name":"おかか","category":"和食","campaign":"FALSE","image":"./uploads/2024/01/001-3.webp","redirect_url":"https://retty.me/area/PRE13/ARE6/SUB603/100001727473/","copy":""},{"order":"1","building":"GEMS市ヶ谷","floor":"6F","restaurant_id":"100001247805","restaurant_name":"金市朗　市ヶ谷店","category":"炉端焼き","campaign":"TRUE","image":"./uploads/2024/01/001-51.jpg","redirect_url":"https://retty.me/area/PRE13/ARE6/SUB602/100001247805/","copy":"産直の新鮮な食材を炉端で串焼きにした「原始焼き」が人気の居酒屋さん"},{"order":"1","building":"GEMS市ヶ谷","floor":"5F","restaurant_id":"100001260455","restaurant_name":"五色　GEMS市ヶ谷店","category":"釜飯","campaign":"FALSE","image":"./uploads/2024/01/001-52.jpg","redirect_url":"https://retty.me/area/PRE13/ARE6/SUB602/100001260455/","copy":"オープンキッチンのカウンターは迫力。雰囲気のよい居酒屋さん"},{"order":"1","building":"GEMS市ヶ谷","floor":"4F","restaurant_id":"100001606947","restaurant_name":"焼きとり・おでん　さかじ","category":"居酒屋","campaign":"TRUE","image":"./uploads/2024/01/002-1.jpg","redirect_url":"https://retty.me/area/PRE13/ARE6/SUB603/100001606947/","copy":""},{"order":"1","building":"GEMS市ヶ谷","floor":"3F","restaurant_id":"100001180192","restaurant_name":"オールドタイランドGEMS市ヶ谷店","category":"タイ料理","campaign":"TRUE","image":"./uploads/2024/01/001-53.jpg","redirect_url":"https://retty.me/area/PRE13/ARE6/SUB602/100001180192/","copy":"20世紀初頭に建てられたタイの洋館をコンセプトとしたタイ料理レストラン"},{"order":"1","building":"GEMS市ヶ谷","floor":"2F","restaurant_id":"100001183377","restaurant_name":"JAM ORCHESTRA","category":"フランス料理","campaign":"FALSE","image":"./uploads/2024/01/001-54.jpg","redirect_url":"https://retty.me/area/PRE13/ARE6/SUB602/100001183377/","copy":"臨場感溢れるカウンターと大人な空間は特別な日やデートにぴったりのお店"},{"order":"1","building":"GEMS市ヶ谷","floor":"1F","restaurant_id":"100001673920","restaurant_name":"Tinc gana","category":"スペイン料理","campaign":"FALSE","image":"./uploads/2024/01/001-55.jpg","redirect_url":"https://retty.me/area/PRE13/ARE6/SUB603/100001673920/","copy":""},{"order":"1","building":"GEMS市ヶ谷","floor":"B1F","restaurant_id":"100001727475","restaurant_name":"Abajo","category":"バー","campaign":"FALSE","image":"./uploads/2024/01/001-56.jpg","redirect_url":"https://retty.me/area/PRE13/ARE6/SUB603/100001727475/","copy":""},{"order":"1","building":"GEMS渋谷","floor":"9F","restaurant_id":"100000748225","restaurant_name":"炭火焼ホルモン ぐう 渋谷","category":"居酒屋","campaign":"TRUE","image":"./uploads/2024/01/001-57.jpg","redirect_url":"https://retty.me/area/PRE13/ARE8/SUB805/100000748225/","copy":"「GEMS渋谷」の最上階にある、ホルモン焼肉屋さん。"},{"order":"1","building":"GEMS渋谷","floor":"7F","restaurant_id":"100001510439","restaurant_name":"水炊き・焼き鳥とりいちず酒場 渋谷新南口店","category":"居酒屋","campaign":"TRUE","image":"./uploads/2024/01/001-58.jpg","redirect_url":"https://retty.me/area/PRE13/ARE8/SUB805/100001510439/","copy":""},{"order":"1","building":"GEMS渋谷","floor":"6F","restaurant_id":"100001675908","restaurant_name":"とろさば料理専門店 SABAR 渋谷店","category":"居酒屋","campaign":"TRUE","image":"./uploads/2024/01/001-4.webp","redirect_url":"https://retty.me/area/PRE13/ARE8/SUB805/100001675908/","copy":""},{"order":"1","building":"GEMS渋谷","floor":"5F","restaurant_id":"100000752372","restaurant_name":"LA COCORICO","category":"パスタ","campaign":"TRUE","image":"./uploads/2024/01/001-59.jpg","redirect_url":"https://retty.me/area/PRE13/ARE8/SUB805/100000752372/","copy":"日本にはあまりない、フルーツブランデー専用の機械があるイタリアン"},{"order":"1","building":"GEMS渋谷","floor":"4F","restaurant_id":"100001509986","restaurant_name":"熟成和牛焼肉エイジング・ビーフ 渋谷店","category":"牛タン","campaign":"FALSE","image":"./uploads/2024/01/001-96.jpg","redirect_url":"https://retty.me/area/PRE13/ARE8/SUB805/100001509986/","copy":""},{"order":"1","building":"GEMS渋谷","floor":"2F","restaurant_id":"100000732732","restaurant_name":"渋三魚金","category":"魚介・海鮮料理","campaign":"TRUE","image":"./uploads/2024/01/001-61.jpg","redirect_url":"https://retty.me/area/PRE13/ARE8/SUB803/100000732732/","copy":"渋谷で美味しいお魚を食べませんか？新鮮な魚介を安く食べられるお店"},{"order":"1","building":"GEMS渋谷","floor":"1F","restaurant_id":"100001607960","restaurant_name":"Merengue","category":"ハワイ料理","campaign":"TRUE","image":"./uploads/2024/01/001-62.jpg","redirect_url":"https://retty.me/area/PRE13/ARE8/SUB805/100001607960/","copy":""},{"order":"1","building":"GEMS渋谷","floor":"B1F","restaurant_id":"100000863629","restaurant_name":"芋蔵","category":"居酒屋","campaign":"TRUE","image":"./uploads/2024/01/001-63.jpg","redirect_url":"https://retty.me/area/PRE13/ARE8/SUB803/100000863629/","copy":"渋谷で深夜まで営業してる、焼酎の種類が豊富な居酒屋さん"},{"order":"2","building":"GEMS横浜","floor":"7F","restaurant_id":"100001506799","restaurant_name":"焼肉ぽんが　GEMS横浜","category":"焼肉","campaign":"TRUE","image":"./uploads/2024/01/001-64.jpg","redirect_url":"https://retty.me/area/PRE14/ARE38/SUB3801/100001506799/","copy":""},{"order":"2","building":"GEMS横浜","floor":"5F","restaurant_id":"100001506796","restaurant_name":"横浜　酒槽","category":"居酒屋","campaign":"TRUE","image":"./uploads/2024/01/001-65.jpg","redirect_url":"https://retty.me/area/PRE14/ARE38/SUB3801/100001506796/","copy":""},{"order":"2","building":"GEMS横浜","floor":"4F","restaurant_id":"100001506795","restaurant_name":"カステリーナ横浜","category":"イタリア料理","campaign":"TRUE","image":"./uploads/2024/01/001-66.jpg","redirect_url":"https://retty.me/area/PRE14/ARE38/SUB3801/100001506795/","copy":""},{"order":"2","building":"GEMS横浜","floor":"3F","restaurant_id":"100001596206","restaurant_name":"La Repertoire","category":"フランス料理","campaign":"TRUE","image":"./uploads/2024/01/001-67.jpg","redirect_url":"https://retty.me/area/PRE14/ARE38/SUB3801/100001596206/","copy":""},{"order":"2","building":"GEMS横浜","floor":"2F","restaurant_id":"100001506788","restaurant_name":"藁焼きと茶碗蒸し 横浜魚金","category":"居酒屋","campaign":"TRUE","image":"./uploads/2024/01/001-2.png","redirect_url":"https://retty.me/area/PRE14/ARE38/SUB3801/100001506788/","copy":""},{"order":"2","building":"GEMS横浜","floor":"1F","restaurant_id":"100001711440","restaurant_name":"プーケットオリエンタル","category":"タイ料理","campaign":"TRUE","image":"./uploads/2024/01/001-68-scaled.jpg","redirect_url":"https://retty.me/area/PRE14/ARE38/SUB3801/100001711440/","copy":""},{"order":"2","building":"GEMS横浜","floor":"B1F","restaurant_id":"100001507305","restaurant_name":"藤つぼ","category":"ホルモン","campaign":"TRUE","image":"./uploads/2024/01/001-69.jpg","redirect_url":"https://retty.me/area/PRE14/ARE38/SUB58702/100001507305/","copy":""},{"order":"2","building":"GEMS新横浜","floor":"9F","restaurant_id":"100001443059","restaurant_name":"焼肉おくう GEMS新横浜店","category":"焼肉","campaign":"TRUE","image":"./uploads/2024/01/001-70.jpg","redirect_url":"https://retty.me/area/PRE14/ARE35/SUB3201/100001443059/","copy":""},{"order":"2","building":"GEMS新横浜","floor":"8F","restaurant_id":"100001432185","restaurant_name":"牛タン専門店　濱たん 新横浜店","category":"牛タン","campaign":"TRUE","image":"./uploads/2024/01/001-71.jpg","redirect_url":"https://retty.me/area/PRE14/ARE35/SUB3201/100001432185/","copy":""},{"order":"2","building":"GEMS新横浜","floor":"7F","restaurant_id":"100001437871","restaurant_name":"トラットリア　オイノス新横浜","category":"イタリア料理","campaign":"TRUE","image":"./uploads/2024/01/001-72.jpg","redirect_url":"https://retty.me/area/PRE14/ARE35/SUB3201/100001437871/","copy":""},{"order":"2","building":"GEMS新横浜","floor":"6F","restaurant_id":"100001727678","restaurant_name":"鶏武者","category":"焼き鳥","campaign":"TRUE","image":"./uploads/2024/01/100001727678.jpg","redirect_url":"https://retty.me/area/PRE14/ARE35/SUB3201/100001727678/","copy":""},{"order":"2","building":"GEMS新横浜","floor":"6F","restaurant_id":"100001727679","restaurant_name":"匠味","category":"居酒屋","campaign":"FALSE","image":"./uploads/2024/01/100001727679.jpg","redirect_url":"https://retty.me/area/PRE14/ARE35/SUB3201/100001727679/","copy":""},{"order":"2","building":"GEMS新横浜","floor":"5F","restaurant_id":"100001438672","restaurant_name":"とりいちず新横浜店","category":"居酒屋","campaign":"TRUE","image":"./uploads/2024/01/001-73.jpg","redirect_url":"https://retty.me/area/PRE14/ARE35/SUB3201/100001438672/","copy":""},{"order":"2","building":"GEMS新横浜","floor":"4F","restaurant_id":"100001593044","restaurant_name":"エビノミセ EBI→YA 新横浜","category":"魚介・海鮮料理","campaign":"TRUE","image":"./uploads/2024/01/002-2.jpg","redirect_url":"https://retty.me/area/PRE14/ARE35/SUB3201/100001593044/","copy":""},{"order":"2","building":"GEMS新横浜","floor":"","restaurant_id":"100001727580","restaurant_name":"ニイハオ","category":"中華料理","campaign":"TRUE","image":"./uploads/2024/01/100001727580.jpg","redirect_url":"https://retty.me/area/PRE14/ARE35/SUB3201/100001727580/","copy":""},{"order":"2","building":"GEMS新横浜","floor":"1F","restaurant_id":"100001444049","restaurant_name":"シンヨコ商店","category":"焼き鳥","campaign":"TRUE","image":"./uploads/2024/01/001-74-scaled.jpg","redirect_url":"https://retty.me/area/PRE14/ARE35/SUB3201/100001444049/","copy":""},{"order":"2","building":"GEMS新横浜","floor":"B1F","restaurant_id":"100001534937","restaurant_name":"ディップパレス 新横浜店","category":"タイ料理","campaign":"FALSE","image":"./uploads/2024/01/001-75.jpg","redirect_url":"https://retty.me/area/PRE14/ARE35/SUB3201/100001534937/","copy":""},{"order":"2","building":"GEMS川崎","floor":"9F","restaurant_id":"100001575463","restaurant_name":"焼肉大昌園きんとき","category":"焼肉","campaign":"TRUE","image":"./uploads/2024/01/001-76.jpg","redirect_url":"https://retty.me/area/PRE14/ARE37/SUB3701/100001575463/","copy":""},{"order":"2","building":"GEMS川崎","floor":"8F","restaurant_id":"100001583099","restaurant_name":"麻辣大学川崎店","category":"中華料理","campaign":"TRUE","image":"./uploads/2024/01/001-77.jpg","redirect_url":"https://retty.me/area/PRE14/ARE37/SUB3701/100001583099/","copy":""},{"order":"2","building":"GEMS川崎","floor":"7F","restaurant_id":"100001574575","restaurant_name":"型無あじと（味都）","category":"居酒屋","campaign":"FALSE","image":"./uploads/2024/01/001-1.jpeg","redirect_url":"https://retty.me/area/PRE14/ARE37/SUB3701/100001574575/","copy":""},{"order":"2","building":"GEMS川崎","floor":"5F","restaurant_id":"100001601350","restaurant_name":"C.STAND 川崎店","category":"バー","campaign":"TRUE","image":"./uploads/2024/01/111.jpg","redirect_url":"https://retty.me/area/PRE14/ARE37/SUB3701/100001601350/","copy":""},{"order":"2","building":"GEMS川崎","floor":"2F","restaurant_id":"100001604407","restaurant_name":"川崎市民食堂　魚金　東","category":"定食","campaign":"TRUE","image":"./uploads/2024/01/001-79.jpg","redirect_url":"https://retty.me/area/PRE14/ARE37/SUB3701/100001604407/","copy":""},{"order":"2","building":"GEMS川崎","floor":"1F","restaurant_id":"100001574579","restaurant_name":"おみっちゃん　川崎店","category":"焼き鳥","campaign":"TRUE","image":"./uploads/2024/01/001-80.jpg","redirect_url":"https://retty.me/area/PRE14/ARE37/SUB3701/100001574579/","copy":""},{"order":"3","building":"GEMSなんば","floor":"","restaurant_id":"","restaurant_name":"黒毛和牛焼肉薩摩 牛の蔵 なんば店","category":"焼肉","campaign":"TRUE","image":"./uploads/2024/01/001-81.jpg","redirect_url":"https://www.gems-portal.com/namba/shop/ushinokura.html","copy":""},{"order":"3","building":"GEMSなんば","floor":"12F","restaurant_id":"100001445740","restaurant_name":"海千山千番長　GEMSなんば店","category":"焼き鳥","campaign":"TRUE","image":"./uploads/2024/01/100001445740.jpeg","redirect_url":"https://retty.me/area/PRE27/ARE94/SUB9501/100001445740/","copy":""},{"order":"3","building":"GEMSなんば","floor":"10F","restaurant_id":"100001559570","restaurant_name":"とろさば料理専門店SABAR GEMSなんば店","category":"居酒屋","campaign":"TRUE","image":"./uploads/2024/01/011.webp","redirect_url":"https://retty.me/area/PRE27/ARE94/SUB9501/100001559570/","copy":""},{"order":"3","building":"GEMSなんば","floor":"9F","restaurant_id":"100001447002","restaurant_name":"ニュー松坂","category":"鉄板焼き","campaign":"TRUE","image":"./uploads/2024/01/001-83.jpg","redirect_url":"https://retty.me/area/PRE27/ARE94/SUB9501/100001447002/","copy":""},{"order":"3","building":"GEMSなんば","floor":"8F","restaurant_id":"100001441953","restaurant_name":"野乃鳥 なんば堂","category":"焼き鳥","campaign":"TRUE","image":"./uploads/2024/01/001-84-scaled.jpg","redirect_url":"https://retty.me/area/PRE27/ARE94/SUB9501/100001441953/","copy":""},{"order":"3","building":"GEMSなんば","floor":"7F","restaurant_id":"100001447007","restaurant_name":"すき焼き　串焼　北斗GEMSなんば店","category":"居酒屋","campaign":"TRUE","image":"./uploads/2024/01/001-85-scaled.jpg","redirect_url":"https://retty.me/area/PRE27/ARE94/SUB9501/100001447007/","copy":""},{"order":"3","building":"GEMSなんば","floor":"5F","restaurant_id":"100001467426","restaurant_name":"韓国料理 ハラペコ食堂GEMSなんば店","category":"韓国料理","campaign":"TRUE","image":"./uploads/2024/01/001-86.jpg","redirect_url":"https://retty.me/area/PRE27/ARE94/SUB9501/100001467426/","copy":""},{"order":"3","building":"GEMSなんば","floor":"3F","restaurant_id":"100001447022","restaurant_name":"中国茶房8 なんば店","category":"中華料理","campaign":"TRUE","image":"./uploads/2024/01/001-87.jpg","redirect_url":"https://retty.me/area/PRE27/ARE94/SUB9501/100001447022/","copy":""},{"order":"3","building":"GEMS栄","floor":"11F","restaurant_id":"100001514444","restaurant_name":"雪月花たなかさとる","category":"焼肉","campaign":"FALSE","image":"./uploads/2024/01/001-88.jpg","redirect_url":"https://retty.me/area/PRE23/ARE63/SUB6304/100001514444/","copy":""},{"order":"3","building":"GEMS栄","floor":"10F","restaurant_id":"100001572963","restaurant_name":"由乃 別邸 栄住吉店","category":"居酒屋","campaign":"FALSE","image":"./uploads/2024/01/001-89-scaled.jpg","redirect_url":"https://retty.me/area/PRE23/ARE63/SUB6304/100001572963/","copy":""},{"order":"3","building":"GEMS栄","floor":"9F","restaurant_id":"100001692601","restaurant_name":"シーシャ×カフェ×バーC.STAND 栄店","category":"バー","campaign":"FALSE","image":"./uploads/2024/01/001-90.jpg","redirect_url":"https://retty.me/area/PRE23/ARE63/SUB6304/100001692601/","copy":""},{"order":"3","building":"GEMS栄","floor":"8F","restaurant_id":"100001511780","restaurant_name":"もつ鍋田しゅう名古屋店","category":"もつ鍋","campaign":"FALSE","image":"./uploads/2024/01/001-91.jpg","redirect_url":"https://retty.me/area/PRE23/ARE63/SUB6304/100001511780/","copy":""},{"order":"3","building":"GEMS栄","floor":"7F","restaurant_id":"100001514432","restaurant_name":"ELLE HALL Dining Sakae","category":"バイキング","campaign":"FALSE","image":"./uploads/2024/01/001-3.png","redirect_url":"https://retty.me/area/PRE23/ARE63/SUB6304/100001514432/","copy":""},{"order":"3","building":"GEMS栄","floor":"5F","restaurant_id":"100001514429","restaurant_name":"KollaBo 栄店","category":"韓国料理","campaign":"FALSE","image":"./uploads/2024/01/001-92.jpg","redirect_url":"https://retty.me/area/PRE23/ARE63/SUB6304/100001514429/","copy":""},{"order":"3","building":"GEMS栄","floor":"4F","restaurant_id":"100001514426","restaurant_name":"焼き鳥　きんざん　住吉店","category":"焼き鳥","campaign":"TRUE","image":"./uploads/2024/01/001-93.jpg","redirect_url":"https://retty.me/area/PRE23/ARE63/SUB6304/100001514426/","copy":""},{"order":"3","building":"GEMS栄","floor":"3F","restaurant_id":"100001514425","restaurant_name":"ALANmodern peruvian & open bar","category":"南米料理","campaign":"TRUE","image":"./uploads/2024/01/100001514425.jpeg","redirect_url":"https://retty.me/area/PRE23/ARE63/SUB6304/100001514425/","copy":""},{"order":"3","building":"GEMS栄","floor":"2F","restaurant_id":"100001702359","restaurant_name":"大名古屋酒場 坊主 栄店","category":"居酒屋","campaign":"FALSE","image":"./uploads/2024/01/000.jpg","redirect_url":"https://retty.me/area/PRE23/ARE63/SUB6304/100001702359/","copy":""},{"order":"3","building":"GEMS栄","floor":"1F","restaurant_id":"100001514422","restaurant_name":"魚河岸酒場FUKU浜金栄住吉店","category":"ふぐ料理","campaign":"FALSE","image":"./uploads/2024/01/001-95.jpg","redirect_url":"https://retty.me/area/PRE23/ARE63/SUB6304/100001514422/","copy":""},{"order":"3","building":"GEMS栄","floor":"B1F","restaurant_id":"100001727476","restaurant_name":"GG Dining Darts & Sports","category":"バー","campaign":"FALSE","image":"./uploads/2024/01/100001727476.webp","redirect_url":"https://retty.me/area/PRE23/ARE63/SUB6304/100001727476/","copy":""}]';
+
+            // jsonText = jsonText.split('NaN').join('\"\"');
+            restaurantData = JSON.parse(jsonText);
+
+            for (var i = 0; i < restaurantData.length; i++) {
+                var tmpRestaurantTable = [];
+                tmpRestaurantTable["order"] = restaurantData[i]["order"];
+                tmpRestaurantTable["building"] = '<div hidden>' + restaurantData[i]["order"] + "_" + '</div>' + restaurantData[i]["building"];
+                tmpRestaurantTable["floor"] = restaurantData[i]["floor"];
+                tmpRestaurantTable["restaurant_id"] = restaurantData[i]["restaurant_id"];
+                tmpRestaurantTable["restaurant_name"] = restaurantData[i]["restaurant_name"];
+                tmpRestaurantTable["category"] = restaurantData[i]["category"];
+                tmpRestaurantTable["campaign"] = restaurantData[i]["campaign"];
+                tmpRestaurantTable["image"] = restaurantData[i]["image"];
+                tmpRestaurantTable["redirect_url"] = restaurantData[i]["redirect_url"] + '?utm_campaign=gems';
+                tmpRestaurantTable["copy"] = restaurantData[i]["copy"];
+
+                if (restaurantData[i]["campaign"] == 'TRUE') {
+                	tmpRestaurantTable["html"] = '<section class="ad_acp"><a id="redirect_url" href="' + restaurantData[i]["redirect_url"] + '?utm_campaign=gems' + '" target="_blank" rel="noopener nofollow"><ul class="ad_acp__images"><li><img id="creative_url_1" src="' + restaurantData[i]["image"] + '" alt=""></li></ul><div class="ad_acp__title"><p class="join">フェア参加店舗</p><p class="join2">' + restaurantData[i]["building"] + ' ' + restaurantData[i]["floor"] + '</p><div class="ad_acp__title__main"><p id="creative_name">' + restaurantData[i]["restaurant_name"] + '</p></div><ul class="restaurant-cassette__detail"><li class="restaurant-cassette__detail-item"><div class="information-list__label information-list__label--categories"><p id="categories">' + restaurantData[i]["category"] + '</p></div></div></a></section>';
+            	} else {
+            		tmpRestaurantTable["html"] = '<section class="ad_acp"><a id="redirect_url" href="' + restaurantData[i]["redirect_url"] + '?utm_campaign=gems' + '" target="_blank" rel="noopener nofollow"><ul class="ad_acp__images"><li><img id="creative_url_1" src="' + restaurantData[i]["image"] + '" alt=""></li></ul><div class="ad_acp__title"><p class="join2">' + restaurantData[i]["building"] + ' ' + restaurantData[i]["floor"] + '</p><div class="ad_acp__title__main"><p id="creative_name">' + restaurantData[i]["restaurant_name"] + '</p></div><ul class="restaurant-cassette__detail"><li class="restaurant-cassette__detail-item"><div class="information-list__label information-list__label--categories"><p id="categories">' + restaurantData[i]["category"] + '</p></div></div></a></section>';
+            	}
+
+                restaurantDataForTable.push(tmpRestaurantTable);
+            };
+
+            const shuffle = ([...array]) => {
+                for (let i = array.length - 1; i >= 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]];
+                }
+                return array;
+            }
+            var randomRestaurantDataForTable = shuffle(restaurantDataForTable);
+
+            $(document).ready(function() {
+                var calcDataTableHeight = function() {
+                    return $(window).height() * 55 / 100;
+                };
+
+
+                var table = $('#restaurantCasset').DataTable({
+                    destroy: true,
+                    data: randomRestaurantDataForTable,
+                    pageLength: 6,
+                    // order: [[2, "asc"]],
+                    columns: [
+                    	{ data: "order" },
+                        { data: "building" },
+                        { data: "floor" },
+                        { data: "restaurant_id" },
+                        { data: "restaurant_name" },
+                        { data: "category" },
+                        { data: "campaign" },
+                        { data: "image" },
+                        { data: "redirect_url" },
+                        { data: "copy" },
+                        { data: "html" }
+                    ],
+                    columnDefs: [{
+                        targets: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+                        visible: false,
+                        searchable: true,
+                    }],
+                    language: {
+                        info: "_TOTAL_ 件のうち、_START_ 〜 _END_ 件を表示",
+                        infoEmpty: "0 件を表示",
+                        infoFiltered: "",
+                    },
+                    dom: 'Pfrtip',
+                    deferRender: true,
+                    drawCallback: function() {
+                        $('#btn-example-load-more').toggle(this.api().page.hasMore());
+                    }
+                });
+
+                var buildTable = table;
+                buildSelect(buildTable);
+                buildTable.on('draw', function() {
+                    buildSelect(buildTable);
+                });
+
+                $('#btn-example-load-more').on('click', function() {
+                    // Load more data
+                    table.page.loadMore();
+                });
+            });
+
+            function buildSelect(table) {
+                table.columns([1]).every(function() {
+                    var column = table.column(this, { search: 'applied' });
+
+                    var selectLabel = "";
+
+                    if (column.index() === 1) {
+                        selectLabel = "GEMSビルを選択";
+                    }
+
+                    var select = $('<select id="' + column.index() + '"><option value="">' + selectLabel + '</option></select>')
+                        .appendTo($('#searchTable'))
+                        .on('change', function() {
+                            var val = $.fn.dataTable.util.escapeRegex(
+                                $(this).val().replace(/<("[^"]*"|'[^']*'|[^'">])*>/g, '').replace(/^[0-9]+_/g, '')
+                            );
+
+                            column
+                                .search(val ? val : '', true, false)
+                                .draw();
+                        });
+
+                    if ($('#searchTable').children('select').length >= 2) {
+                        $('#searchTable').children('select').first().remove();
+                    }
+
+                    var filteredData = table
+                        .column(this, { search: 'applied' })
+                        .data()
+                        .filter(function(value, index) {
+                            return value === 'Accessory' ? true : false;
+                        })
+                        .count();
+
+                    column.data().unique().sort().each(function(d, j) {
+                        var v = d.replace(/<("[^"]*"|'[^']*'|[^'">])*>/g, '').replace(/^[0-9]+_/g, '');
+                        select.append('<option value="' + v + '">' + v + '</option>');
+                    });
+
+                    // The rebuild will clear the exisiting select, so it needs to be repopulated
+                    var currSearch = column.search();
+                    if (currSearch) {
+                        select.val(currSearch);
+                    }
+                });	
+            }
+        // });
+        // request.send();
+        </script>
+    </div>
+
+<!--
+            <div class="search-result" id="searchResult">
+                <div class="page-now"><p>1-4店目/全7店</p></div>       
+        <div class="shop-box">
+            <div class="shop-img">
+                <img src="http://subtest.yuya-mura.com/wp-content/uploads/2024/01/2422.png" alt="ユッケ・生サムギョプサル・コプチャン ハヌリ中目黒店">
+            </div>
+            <div class="shop-text">
+                                <p class="join">フェア参加店舗</p>
+
+                <div class="about-shop">
+                    <p class="floor">1F</p>
+                    <p class="shop-title">ユッケ・生サムギョプサル・コプチャン ハヌリ中目黒店</p>
+                </div>
+
+                <p class="shop-catch">創業15年 韓国政府の 「優秀韓食レストラン」認定店</p>
+
+                <div class="shop-link">
+                                        <a href="https://retty.me/area/PRE13/ARE7/SUB703/100001571855/" target="_blank">このお店に行く</a>
+                </div>
+            </div>
+        </div>
+                <div class="shop-box">
+            <div class="shop-img">
+                <img src="http://subtest.yuya-mura.com/wp-content/uploads/2024/01/88908.jpeg" alt="寿司活　GEMS中目黒店">
+            </div>
+            <div class="shop-text">
+                                <p class="join none">フェア参加店舗</p>
+
+                <div class="about-shop">
+                    <p class="floor">2F </p>
+                    <p class="shop-title">寿司活　GEMS中目黒店</p>
+                </div>
+
+                <p class="shop-catch">品質にこだわった職人が握る本格寿司を 是非ご堪能ください</p>
+
+                <div class="shop-link">
+                                        <a href="https://retty.me/area/PRE13/ARE7/SUB703/100001587712/" target="_blank">このお店に行く</a>
+                </div>
+            </div>
+        </div>
+                <div class="shop-box">
+            <div class="shop-img">
+                <img src="http://subtest.yuya-mura.com/wp-content/uploads/2024/01/w.jpeg" alt="エル・チャテオ　中目黒店">
+            </div>
+            <div class="shop-text">
+                                <p class="join">フェア参加店舗</p>
+
+                <div class="about-shop">
+                    <p class="floor">3F </p>
+                    <p class="shop-title">エル・チャテオ　中目黒店</p>
+                </div>
+
+                <p class="shop-catch">国際大会で優勝したパエリアが ついに中目黒に上陸！</p>
+
+                <div class="shop-link">
+                                        <a href="https://retty.me/area/PRE13/ARE7/SUB703/100001574874/" target="_blank">このお店に行く</a>
+                </div>
+            </div>
+        </div>
+                <div class="shop-box">
+            <div class="shop-img">
+                <img src="http://subtest.yuya-mura.com/wp-content/uploads/2024/01/nakameguroUNO002.jpeg" alt="DartsCafe UNO 中目黒">
+            </div>
+            <div class="shop-text">
+                                <p class="join">フェア参加店舗</p>
+
+                <div class="about-shop">
+                    <p class="floor">4F</p>
+                    <p class="shop-title">DartsCafe UNO 中目黒</p>
+                </div>
+
+                <p class="shop-catch">バー</p>
+
+                <div class="shop-link">
+                                        <a href="https://retty.me/area/PRE13/ARE7/SUB703/100001701226/" target="_blank">このお店に行く</a>
+                </div>
+            </div>
+        </div>
+        <div class="pagination"><ul><li><span aria-current="page" class="page-numbers current">1</span></li><li><a class="page-numbers" href="http://subtest.yuya-mura.com/?paged=2">2</a></li><li><a class="next page-numbers" href="http://subtest.yuya-mura.com/?paged=2">次へ &raquo;</a></li></ul></div>            </div>
+        </div>
+    </div>
+    -->
+</div>
+
+
+    <!-- 食材 -->
+    <div class="food">
+        <div class="container">
+            <h2>自然豊かな愛媛で<br>とれた食材を紹介！</h2>
+        </div>
+        <div class="food-slider">
+        	<div class="food-slider-box">
+                <div class="food-img-box">
+                    <img src="./images/food01.jpg"
+                        width="492" height="345" alt="スライダー" decoding="async">
+                </div>
+                <div class="food-text">
+                    <p>豚肉</p>
+                    <p>
+                        説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。
+                    </p>
+                </div>
+            </div>
+
+            <div class="food-slider-box">
+                <div class="food-img-box">
+                    <img src="./images/food02.jpg"
+                        width="492" height="345" alt="スライダー" decoding="async">
+                </div>
+                <div class="food-text">
+                    <p>宮川早生</p>
+                    <p>
+                        説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。
+                    </p>
+                </div>
+            </div>
+
+            <div class="food-slider-box">
+                <div class="food-img-box">
+                    <img src="./images/food03.jpg"
+                        width="492" height="345" alt="スライダー" decoding="async">
+                </div>
+                <div class="food-text">
+                    <p>レモン</p>
+                    <p>
+                    	説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。
+                </div>
+            </div>
+
+            <div class="food-slider-box">
+                <div class="food-img-box">
+                    <img src="./images/food04.jpg"
+                        width="492" height="345" alt="スライダー" decoding="async">
+                </div>
+                <div class="food-text">
+                    <p>甘トロ豚</p>
+                    <p>
+                    	説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。
+                    </p>
+                </div>
+            </div>
+
+            <div class="food-slider-box">
+                <div class="food-img-box">
+                    <img src="./images/food05.jpg"
+                        width="492" height="345" alt="スライダー" decoding="async">
+                </div>
+                <div class="food-text">
+                    <p>絹かわなす</p>
+                    <p>
+                        説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 愛媛フェアリポート -->
+    <!-- <div class="report">
+        <div class="container">
+            <h2>愛媛フェアReport</h2>
+            <div class="report-grid">
+            	<a href="https://www.instagram.com/p/C2uEb6DyoCF/?hl=ja&img_index=1" target="_blank">
+	            	<img src="./images/gems_insta_01.png"
+	                    width="291" height="291" alt="リポート" decoding="async">
+	            </a>
+
+	         	<a href="https://www.instagram.com/p/C3IHZB_vL-7/?hl=ja&img_index=1" target="_blank">
+	            	<img src="./images/gems_insta_13.png"
+	                    width="291" height="291" alt="リポート" decoding="async">
+	            </a>
+
+	            <a href="https://www.instagram.com/p/C2y_7fWrSTI/?hl=ja&img_index=1" target="_blank">
+	            	<img src="./images/gems_insta_02.png"
+	                    width="291" height="291" alt="リポート" decoding="async">
+	            </a>
+
+	            <a href="https://www.instagram.com/p/C2rS6fvrIT1/?hl=ja&img_index=1" target="_blank">
+	                <img src="./images/gems_insta_03.png"
+	                    width="291" height="291" alt="リポート" decoding="async">
+	            </a>
+
+	            <a href="https://www.instagram.com/p/C2et-zSvI3p/?hl=ja&img_index=1" target="_blank">
+	                <img src="./images/gems_insta_04.png"
+	                    width="291" height="291" alt="リポート" decoding="async">
+	            </a>
+
+	            <a href="https://www.instagram.com/p/C2RwY78Sprk/?hl=ja" target="_blank">
+	                <img src="./images/gems_insta_05.png"
+	                    width="291" height="291" alt="リポート" decoding="async">
+	            </a>
+            </div>
+            <a href="https://www.instagram.com/gemsportal_official/?hl=ja" target="_blank" class="report-more">Instagramでもっと見る</a>
+            <div class="a-block">
+                <a href="https://page.line.me/?accountId=130rbovr" target="_blank" class="report-more line">公式ラインはこちら</a>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- オフ会 -->
+    <div class="off">
+        <div class="container">
+            <h2>オフ会開催！</h2>
+            <div class="off-flex">
+                <p class="off-top">
+                    「GEMS×愛媛フェア」参加の◯店舗でRettyユーザーオフ会を開催します。<br>
+                    説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。
+                </p>
+                <img src="./images/off-top.jpg"
+                        width="460" height="460" alt="オフ会" decoding="async" class="off-top-img">
+            </div>
+
+            <div class="off-row">
+                <div class="off-flex">
+                    <img src="./images/off02.jpeg"
+                        width="460" height="460" alt="オフ会" decoding="async">
+                    <div class="off-text">
+                        <p>日程：◯月◯◯日 (土) 19:00〜</p>
+                        <p>会場：◯◯◯◯◯◯◯◯◯店</p>
+                        <p>
+                            説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。
+                        </p>
+                        <a href="https://retty.me/event/11194/" target="_blank">イベント詳細はこちら<span>></span></a>
+                    </div>
+                </div>
+                <div class="off-flex">
+                    <img src="./images/off01.png"
+                        width="460" height="460" alt="オフ会" decoding="async">
+                    <div class="off-text">
+                        <p>日程：◯月◯◯日 (月) 19:00〜</p>
+                        <p>会場：◯◯◯◯◯◯◯◯◯店</p>
+                        <p>
+                            説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。
+                        </p>
+                        <a href="https://retty.me/event/11225/" target="_blank">イベント詳細はこちら<span>></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 地方創世 -->
+    <div class="mitsui">
+        <div class="container">
+            <h2>野村不動産グループが<br>取り組む地方創生</h2>
+            <p class="sub-mitsui">
+                GEMS（野村不動産グループ）ではコロナ禍で打撃を受けたテナント様はもとより、第一次産業様にフォーカスして「食べて地方創生」と銘打ち地方フェアを実施してまいりました。
+            </p>
+
+            <div class="mitsui-grid">
+                <div class="mitsui-box">
+                    <p class="number">第<span>1</span>弾</p>
+                    <img src="./images/fes01.png"
+                        width="223" height="125" alt="祭り" decoding="async">
+                    <p class="fair">GEMS × NAGASAKI<br>FOOD FAIR</p>
+                    <p class="area">長崎県</p>
+                    <p class="fes-date">2022年1月22日~2月18日</p>
+                    <a href="" class="to-detail" target="_blank">詳細はこちら</a>
+                </div>
+
+                <div class="mitsui-box">
+                    <p class="number">第<span>2</span>弾</p>
+                    <img src="./images/fes02.png"
+                        width="223" height="125" alt="祭り" decoding="async">
+                    <p class="fair">GEMS × KYOTO<br>FOOD FAIR</p>
+                    <p class="area">京都府</p>
+                    <p class="fes-date">2022年5月20日~6月16日</p>
+                    <a href="https://www.gems-portal.com/assets/pdf/20220519.pdf" class="to-detail" target="_blank">詳細はこちら</a>
+                </div>
+
+                <div class="mitsui-box">
+                    <p class="number">第<span>3</span>弾</p>
+                    <img src="./images/fes03.png"
+                        width="223" height="125" alt="祭り" decoding="async">
+                    <p class="fair">GEMS × YAMAGATA<br>FOOD FAIR</p>
+                    <p class="area">山形県</p>
+                    <p class="fes-date">2023年1月20日~2月17日</p>
+                    <a href="https://www.gems-portal.com/assets/pdf/20230119.pdf" class="to-detail" target="_blank">詳細はこちら</a>
+                </div>
+
+                <div class="mitsui-box">
+                    <p class="number">第<span>4</span>弾</p>
+                    <img src="./images/fes04.png"
+                        width="223" height="125" alt="祭り" decoding="async">
+                    <p class="fair">GEMS × NAGANO<br>FOOD FAIR</p>
+                    <p class="area">長野県</p>
+                    <p class="fes-date">2023年7月28日~8月24日</p>
+                    <a href="https://www.gems-portal.com/assets/pdf/20230720.pdf" class="to-detail" target="_blank">詳細はこちら</a>
+                </div>
+                <div class="mitsui-box">
+                    <p class="number">第<span>5</span>弾</p>
+                    <img src="./images/fes05.jpg"
+                        alt="祭り" decoding="async" style="width: 223px; height: 125px; object-fit: cover; border-radius: 20px;">
+                    <p class="fair">GEMS × KOCHI<br>FOOD FAIR</p>
+                    <p class="area">高知県</p>
+                    <p class="fes-date">2024年1月30日~2月19日</p>
+                    <a href="https://campaign.retty.me/gems_kochi/" class="to-detail" target="_blank">詳細はこちら</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-nav">
+            <a href="https://retty.me/" target="_blank">Retty</a>
+            <a href="https://corp.retty.me/" target="_blank">運営会社</a>
+            <a href="https://retty.me/announce/philosophy/" target="_blank">Rettyが目指す世界</a>
+            <a href="https://retty.me/announce/tos/" target="_blank">利用規約</a>
+            <a href="https://retty.me/announce/privacy/" target="_blank">プライバシーポリシー</a>
+            <a href="https://retty.me/sitemap/" target="_blank">サイトマップ</a>
+            <a href="https://retty.news/" target="_blank">グルメニュース</a>
+            <a href="https://inforetty.zendesk.com/hc/ja/articles/13032608476185" target="_blank">脆弱性のご連絡</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf98J7pkQ-4yj3wr0zXxF5jfAcY-aLLkLhwWr1g2Kvg84EMfA/viewform" target="_blank">広報へのお問合せ</a>
+            <a href="https://retty.me/announce/support/" target="_blank">店舗様お問合せ</a>
+            <a href="https://own.retty.me/omise/" target="_blank">Rettyお店会員について</a>
+            <a href="https://lp.self-order.retty.me/" target="_blank">モバイルオーダー</a>
+            <a href="https://retty.me/announce/logo/" target="_blank">ロゴ利用について</a>
+            <a href="https://retty.me/announce/review-guideline/" target="_blank">投稿ガイドライン</a>
+            <a href="https://retty.me/announce/community-policy/" target="_blank">コミュニティーポリシー</a>
+            <a href="https://www.facebook.com/retty.me" target="_blank">Facebook公式</a>
+            <a href="https://twitter.com/Retty_jp" target="_blank">X(旧Twitter)公式</a>
+            <a href="https://teamretty.notion.site/Retty-a426f0c163e64358ba466782beeeb6b8" target="_blank">採用情報</a>
+            <a href="https://inforetty.zendesk.com/hc/ja" target="_blank">ヘルプページ</a>
+            <a href="https://bester-eats.com/" target="_blank">BESTER EATS</a>
+        </div>
+        <p>&reg; Retty, Inc. All Rights Reserved.</p>
+    </div>
+</footer>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" id="slick-script-js"></script>
+<script type="text/javascript" src="./js/main.js" id="main-script-js"></script>
+</body>
+
+</html>
