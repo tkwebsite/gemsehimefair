@@ -12,7 +12,7 @@ html {
 }
 
 .fv .container {
-    height: 75vw;
+    height: 950px;
 }
 
 .top-slider {
@@ -126,6 +126,16 @@ footer .container p {
         top: 30px;
         left: 0;
         align-items: center;
+    }
+
+    .fv .container {
+        height: 950px;
+    }
+}
+
+@media(max-width:480px) {
+    .fv .container {
+        height: 264px;
     }
 }
 
