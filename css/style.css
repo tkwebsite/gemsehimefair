@@ -1181,6 +1181,12 @@ footer .container p {
     margin-top: 60px;
 }
 
+.off-flex:nth-of-type(3) {
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 60px;
+}
+
 .off-flex img {
     width: 42%;
     height: auto;
