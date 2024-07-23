@@ -467,7 +467,7 @@ footer .container p {
     position: relative;
     padding-left: 4em;
     margin-top: 160px;
-    margin-bottom: 180px;
+    margin-bottom: 27px;
 }
 
 .shop h2::before {
@@ -1182,7 +1182,6 @@ footer .container p {
 }
 
 .off-flex:nth-of-type(3) {
-    flex-direction: space-between;
     align-items: center;
     margin-top: 60px;
 }
@@ -1405,7 +1404,7 @@ footer .container p {
     font-weight: 400;
     max-width: 720px;
     width: 82%;
-    margin: 100px auto 117px auto;
+    margin: 117px auto;
     text-align: left;
 }
 
