@@ -1182,7 +1182,7 @@ footer .container p {
 }
 
 .off-flex:nth-of-type(3) {
-    flex-direction: row-reverse;
+    flex-direction: space-between;
     align-items: center;
     margin-top: 60px;
 }
